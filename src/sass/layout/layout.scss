@@ -1,0 +1,179 @@
+.container__title{
+    font-family:'cursive';
+    user-select: none;
+    color:$textColorImg;
+    text-align: center;
+    font-weight:100;
+    font-size:50px;
+}
+.card{
+    // border:1px solid yellow;
+    width:1000px;
+    height:750px;
+    margin:0 auto;
+    position: relative;
+    overflow: hidden;
+    border-radius:10px;
+    box-shadow:10px 10px 30px grey;
+    margin-bottom: 30px ;
+    &__img{
+        position: absolute;
+        width:100%;
+        height:100%;
+        
+    }
+    .card__section1{
+        top:0;
+        position:absolute;
+        border-radius: 10px;
+        width:100%;
+        height: 100%;
+        display:flex;
+        flex-direction:column;
+      &__titlesection{
+        user-select: none;
+          margin:0 auto;
+         
+          text-align: center;
+          color:$titleColorImg;
+         
+            h2{
+                font-family:'cursive';
+                font-weight:lighter ;
+               font-size:30px;
+            }
+            h1{
+                
+                font-family:'cursive';
+                font-weight:lighter ;
+                 font-size:40px;
+            }
+            h3{
+                margin:0;
+                font-family:'cursive';
+                font-weight:100 ;
+                position: relative;
+                font-size: 150px;
+                
+                .temp{
+                    position: absolute;
+                    font-size:40px;
+                    top:0;
+                   
+                }
+            }
+      }
+       
+    }
+    .card__section2{
+        position: absolute;
+        bottom:0;
+        
+        width:100%;
+       
+        padding:0;
+        margin:0;
+        &__ulsection1{
+            padding:10px;
+            margin:0;
+            display:flex;
+            justify-content:space-between;
+            align-self:center;
+            &-li{
+                list-style: none;
+                color:$textColorImg;
+                &__img{
+                    width:30px;
+                    height:30px;
+                }
+            }
+            
+        }
+        &__ulsection2{
+            display:flex;
+            padding:20px;
+            margin:0;
+            justify-content:space-between;
+            align-self:center;
+            background-color: $backgroundColorResults;
+            &-li{
+                list-style: none;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                flex-direction: column;
+                font-family:cursive;
+                color:$textColorResults;
+                padding:20px;
+                border:1px solid grey;
+                border-radius: 1rem;
+               &__icon{
+                   position: relative;
+                  
+               }
+               &__icon--temp{
+                position: absolute;
+                font-size: 10px;
+                top:0;
+               
+            }
+              
+            }
+        }
+        h4{
+            color:$textColorDay;
+        }
+    }
+
+
+    &__loadingcomponent{
+        background-color: rgba(0,0,0,0.5);;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        position: absolute;
+        width:100%;
+        height: 100%;
+        border-radius: 10px;
+        &__img{
+            width:50px;
+            height: 50px;
+            user-select: none;
+        }
+    }
+}
+.autocomplete{
+   
+    position: relative;
+    height:35px;
+    width:20%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top:30px;
+   
+    &__input{
+        border-radius: 1rem;
+        position: absolute;
+        outline:none;
+        border: none;
+        width:100%;
+        height: 100%;
+        top:0;
+        box-shadow:5px 6px  6px gray;
+        padding-left: 10px;
+    }
+    &__button{
+        position: absolute;
+        right:0;
+        outline:none;
+        top:4px;
+        height:100%;
+        border:none;
+        background-color:transparent;
+        user-select: none;
+        &:hover{
+            color:red;
+            cursor: pointer;
+        }
+    }
+}
